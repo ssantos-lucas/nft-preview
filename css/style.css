@@ -1,0 +1,154 @@
+body{
+    background-color: hsl(217, 54%, 11%);
+    font-family: 'Outfit', sans-serif;
+}
+
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+    
+}
+
+.container{
+    width: 350px;
+    height: 620px;
+    background-color: hsl(216, 50%, 16%);
+    border-radius: 10px;
+    margin-top: 47.5px;
+
+}
+
+.cubo{
+    text-align: center;
+    margin: 20px;
+}
+
+.cubo .cuboo{
+    width: 320px;
+    height: 320px;
+    border-radius: 20px;
+    transition: 0.3s;
+}
+
+.cubo a:hover .cuboo {
+    background-color: aqua;
+    opacity: 25%;
+    background-image: url(/nft-preview-card-component-main/images/icon-view.svg) center no-repeat;
+}
+
+.container .info{
+    padding-left: 20px;
+}
+
+.info .titulo{
+    color: hsl(0, 0%, 100%);
+    font-weight: 600;
+    font-size: 22.5px;
+    transition: 0.3s;
+}
+
+
+.info a:hover .titulo {
+    color: aqua;
+}
+
+
+.info .desc{
+    color: grey;
+    font-weight: 300;
+    font-size: 18px;
+    margin: 20px 0;
+}
+
+.num{
+    margin-bottom: 10px;
+}
+
+.info .num{
+    padding-right: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+.num .preco{
+    color: aqua;
+    font-weight: 400;
+}
+
+.num .validade{
+    color: grey;
+    font-weight: 300;
+}
+
+.linha{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+    color: hsl(215, 32%, 27%);
+}
+
+.container .aut{
+    padding-left: 20px;
+    margin-bottom: 25px;
+    font-weight: 300;
+    display: flex;
+    align-items: center;
+}
+
+.aut .icon{
+    width: 30px;
+    height: 30px;
+    border: 1px solid white;
+    border-radius: 30px;
+}
+
+.aut .name{
+    color: grey;
+    margin-left: 15px;
+}
+
+.aut .color{
+    color: white;
+    transition: 0.3s;
+}
+
+.aut a:hover .color {
+    color: aqua;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+footer .attribution { font-size: 11px; text-align: center; }
+footer .attribution a { color: hsl(228, 45%, 44%); }
