@@ -1,48 +1,67 @@
-body{
+body {
     background-color: hsl(217, 54%, 11%);
     font-family: 'Outfit', sans-serif;
 }
 
-main{
+main {
     display: flex;
     justify-content: center;
     align-items: center;
     margin-bottom: 20px;
-    
+
 }
 
-.container{
+.container {
     width: 350px;
     height: 620px;
     background-color: hsl(216, 50%, 16%);
     border-radius: 10px;
-    margin-top: 47.5px;
+    margin-top: 100px;
+    margin-left: 15px;
+    position: relative;
 
 }
 
-.cubo{
+.cubo {
     text-align: center;
     margin: 20px;
 }
 
-.cubo .cuboo{
+.cubo .cuboo {
     width: 320px;
     height: 320px;
     border-radius: 20px;
-    transition: 0.3s;
+    opacity: 1;
+    display: block;
+    transition: .2s ease;
+    backface-visibility: hidden;
+}
+
+.cubo .olhoo {
+    transition: .2s ease;
+    opacity: 0;
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+
 }
 
 .cubo a:hover .cuboo {
-    background-color: aqua;
-    opacity: 25%;
-    background-image: url(/nft-preview-card-component-main/images/icon-view.svg) center no-repeat;
+    opacity: 0.3;
 }
 
-.container .info{
+.cubo a:hover .olhoo{
+    opacity: 1;
+}
+
+.container .info {
     padding-left: 20px;
 }
 
-.info .titulo{
+.info .titulo {
     color: hsl(0, 0%, 100%);
     font-weight: 600;
     font-size: 22.5px;
@@ -55,18 +74,18 @@ main{
 }
 
 
-.info .desc{
+.info .desc {
     color: grey;
     font-weight: 300;
     font-size: 18px;
     margin: 20px 0;
 }
 
-.num{
+.num {
     margin-bottom: 10px;
 }
 
-.info .num{
+.info .num {
     padding-right: 20px;
     display: flex;
     align-items: center;
@@ -74,17 +93,17 @@ main{
 }
 
 
-.num .preco{
+.num .preco {
     color: aqua;
     font-weight: 400;
 }
 
-.num .validade{
+.num .validade {
     color: grey;
     font-weight: 300;
 }
 
-.linha{
+.linha {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -92,7 +111,7 @@ main{
     color: hsl(215, 32%, 27%);
 }
 
-.container .aut{
+.container .aut {
     padding-left: 20px;
     margin-bottom: 25px;
     font-weight: 300;
@@ -100,19 +119,19 @@ main{
     align-items: center;
 }
 
-.aut .icon{
+.aut .icon {
     width: 30px;
     height: 30px;
     border: 1px solid white;
     border-radius: 30px;
 }
 
-.aut .name{
+.aut .name {
     color: grey;
     margin-left: 15px;
 }
 
-.aut .color{
+.aut .color {
     color: white;
     transition: 0.3s;
 }
@@ -150,5 +169,11 @@ main{
 
 
 
-footer .attribution { font-size: 11px; text-align: center; }
-footer .attribution a { color: hsl(228, 45%, 44%); }
+footer .attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+footer .attribution a {
+    color: hsl(228, 45%, 44%);
+}
